@@ -1,0 +1,280 @@
+<!-- Need to figure out why things are not aligning center -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FAVICON -->
+<link rel="shortcut icon" href="assets/img/img.png" type="image/x-icon">
+        <!-- REMIX ICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- CSS -->
+<link rel="stylesheet" href="assets/css/portfolio.css">
+
+<title>Christian Ruth Portfolio</title>
+    </head>
+    <body>
+         <!-- HEADER PROFILE -->
+<header class="profile container">
+    <!-- THEME BUTTON -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+<div class="profile__container">
+    <div class="profile__data">
+        <div class="profile__border">
+            <div class="profile__perfil">
+                <!-- Insert your immage, according to the example size of the portfolio -->
+                <img src="/assets/img/headshotthing3.png" alt="" style="width: auto; height: auto; "> 
+            </div>
+        </div>
+
+        <h2 class="profile__name">Christian Ruth</h2>
+        <h3 class="profile__profession">Bachelor of Science</h3> <!-- CHANGE THIS -->
+
+        <ul class="profile__social">
+            <a href="https://www.youtube.com/channel/UCzUhTpetZr3rV5_0Q_AoWcg" target="_blank" class="profile__social-link">
+                <i class="ri-youtube-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christian-ruth-95bb91214/" target="_blank" class="profile__social-link">
+                <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/Chrisql" target="_blank" class="profile__social-link">
+                <i class="ri-github-line"></i>
+            </a>
+        </ul>
+    </div>
+
+    <div class="profile__info grid">
+        <div class="profile__info-group">
+            <h3 class="profile__info-number">1</h3>
+            <p class="profile__info-description">
+                Year of <br> experience
+            </p>
+        </div>
+        <div class="profile__info-group">
+            <h3 class="profile__info-number">10</h3>
+            <p class="profile__info-description">
+                Completed <br> projects
+            </p>
+        </div>
+        <!-- <div class="profile__info-group">
+            <h3 class="profile__info-number">??</h3>
+            <p class="profile__-description">
+                something
+            </p> --> <!-- USE THIS IF NEED BE -->
+        </div>
+    </div>
+
+    <div class="profile__buttons">
+        <!-- INSERT CV -->
+        <a download="" href="/assets/Docs/ChristianRuthResume.pdf" class="button">
+            Download CV <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+            <!-- Insert a real number plus country code -->
+            <a href="" target="_blank" class="button button__small button__gray">
+                <i class="ri-whatsapp-line"></i> <!-- CHANGE THIS NOW! -->
+            </a>
+
+            <!-- Insert your brand name or profile -->
+            <a href="mailto:christianruthalt@gmail.com" target="_blank" class="button button__small button__gray">
+                <i class="ri-mail-line"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</header>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <ul class="filters__content">
+            <button class="filters__button filter-tab-active" data-target="#projects">
+                Projects & Education
+            </button>
+            <button class="filters__button" data-target="#skills">
+                Skills
+            </button>
+        </ul>
+
+        <div class="filters__sections">
+            <!-- PROJECTS -->
+            <div class="filters__active" data-content id="projects">
+                <div class="projects__content grid">
+                    <article class="projects__card">
+                        <img src="/assets/img/simplecalcimage2.png" alt="Simple Calculator" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle"> Text Based Calculator</span>
+                                <h3 class="projects__title">C++ Calculator Application</h3>
+                                <a href="https://github.com/Chrisql/Calculations-cpp"
+                                    class="projects__button button button__small">
+                                    <i class="ri-code-line"></i>
+                                </a>
+                                <a href="#" class="projects__button button button__small">
+                                <i class="ri-youtube-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                       
+                        <img src="/assets/img/loginPageImage.png" alt="Lgin Page" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Signup & Login page using Databases</span>
+                                <h3 class="projects__title">Login Webpage</h3>
+                                <a href="https://github.com/Chrisql/Login-Page"
+                                    class="projects__button button button__small">
+                                    <i class="ri-code-line"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="/assets/img/rockpaperscissorsimage.jfif" alt="rps Game" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle"></span>
+                                <h3 class="projects__title">Rock Paper Scissors Game</h3>
+                                <a href="https://github.com/Chrisql/Rock-Paper-Scissors" class="projects__button button button__small">
+                                    <i class="ri-code-line"></i>
+                                </a>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-youtube-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card">
+                        <img src="/assets/img/smalltalkbotimage.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Have a small conversation with my bot!</span>
+                                <h3 class="projects__title">Small Talk Bot</h3>
+                                <a href="https://github.com/Chrisql/Small-Talk-Bot" class="projects__button button button__small">
+                                    <i class="ri-code-line"></i>
+                                </a>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-youtube-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="/assets/img/firstwebsiteimage.png" alt="First Website" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Software Engineering webpage</span>
+                                <h3 class="projects__title">First Webpage</h3>
+                                <a href="https://github.com/Chrisql/firstWebsite" class="projects__button button button__small">
+                                    <i class="ri-code-line"></i>
+                                </a>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-youtube-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+                
+    <!-- SKILLS -->
+    <div class="skills__content grid" data-content id="skills">
+<div class="skills__area">
+    <h3 class="skills__title">
+        Programming Languages
+    </h3>
+
+    <div class="skills__box">
+        <div class="skills__group">
+            <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                            <div>
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                        
+            <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                            <div>
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+            <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                            <div>
+                                <h3 class="skills__name">Javascript</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+        <div class="skills__group">
+            <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                            <div>
+                                <h3 class="skills__name">C++</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+            <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                            <div>
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+            <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                            <div>
+                                <h3 class="skills__name">Git</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Christain Ruth. All rights reserved
+            </span>
+        </footer>
+
+        <!-- SCROLLREVEAL -->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/portfolio.js"></script>
+    </body>
+</html>
